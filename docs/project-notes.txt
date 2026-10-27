@@ -1,0 +1,7 @@
+Proyecto: Sistema de Inventario Empresarial
+
+Objetivos:
+- Administrar inventario con PostgreSQL
+- Automatizar respaldos con Bash
+- Programar tareas con cron
+- Mantener logs de ejecución
