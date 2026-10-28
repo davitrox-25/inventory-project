@@ -19,7 +19,22 @@ Goals
 * Maintain execution logs
 * Practice Linux server administration
 	
-	
+
+Database Schema
+
+See:
+
+* docs/database_schema.md
+* docs/ERD.md
+
+The database includes:
+
+* Categories
+* Suppliers
+* Products
+* Warehouses
+* Inventory
+* Inventory Movements	
 	
 	
 	
