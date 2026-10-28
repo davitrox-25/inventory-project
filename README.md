@@ -18,7 +18,7 @@ The objective is to demonstrate:
 * Bash scripting
 * Cron job automation
 * Version control with Git and GitHub
- 
+
 -----------------------------------------------------------------------------------------------------------------------
 
 
