@@ -93,6 +93,7 @@ Project Structure
 inventory-project/
 │
 ├── backups/
+│
 ├── docs/
 │   ├── database_schema.md
 │   ├── ERD.md
