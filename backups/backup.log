@@ -1,0 +1,41 @@
+[Tue Oct 27 07:19:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:19:01 PM CDT 2026] Backup completed
+[Tue Oct 27 07:20:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:20:02 PM CDT 2026] Backup completed
+[Tue Oct 27 07:21:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:21:01 PM CDT 2026] Backup completed
+[Tue Oct 27 07:22:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:22:01 PM CDT 2026] Backup completed
+[Tue Oct 27 07:23:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:23:01 PM CDT 2026] Backup completed
+[Tue Oct 27 07:24:01 PM CDT 2026] Starting backup
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+[Tue Oct 27 07:24:02 PM CDT 2026] Backup completed
+sudo: unable to execute /home/davitrox/inventory-project/scripts/backup_db.sh: Permission denied
+sudo: unable to execute /home/davitrox/inventory-project/scripts/backup_db.sh: Permission denied
+sudo: unable to execute /home/davitrox/inventory-project/scripts/backup_db.sh: Permission denied
+[Tue Oct 27 07:41:55 PM CDT 2026] Starting backup
+/home/davitrox/inventory-project/scripts/backup_db.sh: line 8: /var/lib/postgresql/inventory-project/backups/inventory_db_20261027_194155.sql: No such file or directory
+[Tue Oct 27 07:41:55 PM CDT 2026] Backup completed
+/home/davitrox/inventory-project/scripts/backup_db.sh: line 10: unexpected EOF while looking for matching `"'
+[Tue Oct 27 07:47:14 PM CDT 2026] Starting backup
+/home/davitrox/inventory-project/scripts/backup_db.sh: line 8: /home/davitrox/inventory-project/backups/inventory_db_20261027_194714.sql: Permission denied
+[Tue Oct 27 07:47:14 PM CDT 2026] Backup completed
+[Tue Oct 27 07:48:52 PM CDT 2026] Starting backup
+/home/davitrox/inventory-project/scripts/backup_db.sh: line 8: /home/davitrox/inventory-project/backups/inventory_db_20261027_194852.sql: Permission denied
+[Tue Oct 27 07:48:52 PM CDT 2026] Backup completed
+[Tue Oct 27 07:50:35 PM CDT 2026] Starting backup
+[Tue Oct 27 07:50:35 PM CDT 2026] Backup completed
+[Tue Oct 27 07:54:08 PM CDT 2026] Starting backup
+[Tue Oct 27 07:54:09 PM CDT 2026] Backup completed
