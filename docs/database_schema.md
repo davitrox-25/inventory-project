@@ -1,5 +1,8 @@
 Database Schema
+
 Tables and Relationships
+
+```text
 categories └── products
 
 suppliers └── products
@@ -7,7 +10,7 @@ suppliers └── products
 products ├── inventory └── inventory_movements
 
 warehouses ├── inventory └── inventory_movements
-
+```
 -------------------------------------------------
 Relationship Details
 
