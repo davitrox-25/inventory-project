@@ -29,17 +29,25 @@ echo "Backup Count: $BACKUP_COUNT"
 echo "Latest Backup: $LATEST_BACKUP"
 echo "Backup Storage Size: $BACKUP_SIZE"
 
-echo ""
-echo "Disk Usage:"
-df -h /
+DISK_USAGE=$(df / | awk 'NR==2 {print $5}' | sed 's/%//')
 
 echo ""
 echo "==============================="
 echo " HEALTH CHECK SUMMARY"
 echo "==============================="
 
-if [ "$POSTGRES_STATUS" = "active" ] && [ "$DB_STATUS" = "OK" ]; then
-    echo "Overall Status: HEALTHY"
+if [ "$POSTGRES_STATUS" != "active" ]; then
+    echo "CRITICAL: PostgreSQL service is down"
+
+elif [ "$DB_STATUS" != "OK" ]; then
+    echo "CRITICAL: Database connection failed"
+
+elif [ "$BACKUP_COUNT" -eq 0 ]; then
+    echo "WARNING: No backups found"
+
+elif [ "$DISK_USAGE" -gt 80 ]; then
+    echo "WARNING: Disk usage above 80%"
+
 else
-    echo "Overall Status: ATTENTION REQUIRED"
+    echo "HEALTHY: All checks passed"
 fi
