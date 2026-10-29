@@ -88,7 +88,7 @@ PostgreSQL Database
 Database tables and relationships.
 
 
-![Automated Backups Log](screenshots/database_tables.png)
+![Automated Backups Log](docs/screenshots/database_tables.png)
 -----------------------------------------------------------------------------------------------------------------------
 Features
 
