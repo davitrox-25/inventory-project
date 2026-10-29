@@ -14,11 +14,13 @@ The objective is to demonstrate:
 * Linux system administration
 * PostgreSQL database management
 * Relational database design
+* SQL Query Development
 * Backup and recovery procedures
+* Disaster Recovery
+* Health Monitoring
 * Bash scripting
 * Cron job automation
-* Version control with Git and GitHub
-
+* Git & GitHub Workflow
 -----------------------------------------------------------------------------------------------------------------------
 
 
@@ -33,36 +35,69 @@ Technologies Used
 
 -----------------------------------------------------------------------------------------------------------------------
 
-Database Structure
+Key Features
 
-The database includes the following tables:
+Database Administration
 
-* categories
-* suppliers
-* products
-* warehouses
-* inventory
-* inventory_movements
+* PostgreSQL deployment and configuration
+* Relational database design
+* Foreign key relationships
+* SQL reporting queries
 
-Additional documentation:
+Inventory Management
 
-* docs/database_schema.md
-* docs/ERD.md
+* Product catalog
+* Supplier management
+* Warehouse management
+* Inventory tracking
+* Inventory movement history
+
+Backup Automation
+
+* Automated PostgreSQL backups
+* Timestamped backup naming
+* Compressed backup archives (.sql.gz)
+* Scheduled execution using cron
+
+Disaster Recovery
+
+* Automated restore script
+* Recovery procedures documentation
+* Backup validation testing
+
+Monitoring
+
+* Database health monitoring
+* PostgreSQL service validation
+* Database connectivity checks
+* Backup verification
+* Disk utilization monitoring
+* Health logging
+
+Backup Retention
+
+* Automatic cleanup of backup archives older than 7 days
+
+-----------------------------------------------------------------------------------------------------------------------
+
+System Architecture
+See:
+
+docs/system_architecture.md
 
 -----------------------------------------------------------------------------------------------------------------------
 
 Database ERD
-
-See the complete diagram:
+See:
 
 docs/ERD.md
-
 
 -----------------------------------------------------------------------------------------------------------------------
 
 Health Check
 
-The project includes a custom health monitoring script that validates database availability, backup status, and storage usage.
+The project includes a custom health monitoring script.
+
 
 ![Health Check Status](docs/screenshots/health_check.png)
 
@@ -70,14 +105,16 @@ The project includes a custom health monitoring script that validates database a
 
 Automated Backups
 
-Compressed PostgreSQL backups are automatically generated and stored using a retention policy.
+The system automatically generates compressed PostgreSQL backup archives.
+
 
 ![Automated Backups Log](docs/screenshots/backups.png)
 -----------------------------------------------------------------------------------------------------------------------
 
 Cron Automation
 
-Database backups and health checks are scheduled using cron.
+Scheduled tasks are executed automatically using cron.
+
 
 ![Automated Backups Log](docs/screenshots/cron_jobs.png)
 
@@ -90,46 +127,9 @@ Database tables and relationships.
 
 ![Automated Backups Log](docs/screenshots/database_tables.png)
 -----------------------------------------------------------------------------------------------------------------------
-Features
+Repository Structure
 
-Inventory Management
-
-* Product catalog
-* Supplier management
-* Warehouse management
-* Inventory tracking
-* Inventory movement history
-
-
-Database Administration
-
-* PostgreSQL database deployment
-* Relational schema design
-* Foreign key implementation
-* SQL JOIN queries
-
-Backup Automation
-
-* Automated PostgreSQL backups
-* Timestamped backup files
-* Compressed backup archives (.sql.gz)
-* Scheduled execution using cron
-
-Disaster Recovery
-
-* Database restoration procedures
-* Restore automation script
-* Recovery documentation
-
-Backup Retention
-
-* Automatic cleanup of old backup archives
-* Seven-day retention policy
-
------------------------------------------------------------------------------------------------------------------------
 ```text
-Project Structure
-
 inventory-project/
 │
 ├── backups/
@@ -137,67 +137,70 @@ inventory-project/
 ├── docs/
 │   ├── database_schema.md
 │   ├── ERD.md
-│   └── recovery_procedure.md
+│   ├── recovery_procedure.md
+│   ├── system_architecture.md
+│   └── screenshots/
+│
+├── logs/
 │
 ├── scripts/
 │   ├── backup_db.sh
-│   └── restore_db.sh
+│   ├── restore_db.sh
+│   └── check_db_health.sh
 │
 ├── sql/
 │   ├── create_tables.sql
 │   ├── sample_data.sql
-│   └── database_design.md
+│   ├── database_design.md
+│   └── business_queries.sql
 │
 └── README.md
-
 ```
 -----------------------------------------------------------------------------------------------------------------------
-Backup Workflow
 
-Create a backup:
+Example SQL Reports
 
-./scripts/backup_db.sh
+Included reporting queries:
 
-Generated output:
+* Inventory by warehouse
+* Low stock products
+* Inventory valuation
+* Total inventory value
+* Inventory movement history
 
-inventory_db_YYYYMMDD_HHMMSS.sql.gz
+Location:
 
------------------------------------------------------------------------------------------------------------------------
-Restore Workflow
-
-Restore a database from a backup file:
-
-./scripts/restore_db.sh backups/backup_file.sql.gz
+sql/business_queries.sql
 
 -----------------------------------------------------------------------------------------------------------------------
 Learning Outcomes
 
 Through this project I practiced:
 
-* PostgreSQL administration
-* Linux server management
-* Bash scripting
-* Scheduled task automation
-* Database backup strategies
-* Database recovery procedures
-* Git workflow
-* Technical documentation
+* Linux Server Administration
+* PostgreSQL Management
+* SQL Query Development
+* Bash Scripting
+* Cron Job Scheduling
+* Backup Automation
+* Disaster Recovery
+* Monitoring and Health Checks
+* Git Version Control
+* Technical Documentation
 
 -----------------------------------------------------------------------------------------------------------------------
 Future Improvements
 
-* ERD image integration
-* Database monitoring
-* Backup verification
-* Email notifications
-* Role-based database access
+* Email alerts
+* Backup verification automation
+* Role-based database security
 * Docker deployment
-* Automated health checks
+* Monitoring dashboard
+* Database replication
 
 -----------------------------------------------------------------------------------------------------------------------
-
 Author
+
 David
 
-Linux • PostgreSQL • Bash • SQL
-
+Linux • PostgreSQL • SQL • Bash
