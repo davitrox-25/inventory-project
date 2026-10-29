@@ -1,5 +1,7 @@
 Entity Relationship Diagram (ERD)
 
+```text
+
 +----------------+
 |   categories   |
 +----------------+
@@ -45,3 +47,6 @@ Entity Relationship Diagram (ERD)
                      | warehouse_name   |
                      | location         |
                      +------------------+
+
+
+```
