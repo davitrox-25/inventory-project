@@ -1,0 +1,18 @@
+===============================
+ DATABASE HEALTH CHECK
+===============================
+
+PostgreSQL Status: active
+Database Connection: OK
+Backup Count: 1
+Latest Backup: /home/davitrox/inventory-project/backups/inventory_db_20261027_203639.sql.gz
+Backup Storage Size: 60K
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        40G   14G   24G  37% /
+
+===============================
+ HEALTH CHECK SUMMARY
+===============================
+Overall Status: HEALTHY
