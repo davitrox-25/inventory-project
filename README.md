@@ -64,7 +64,7 @@ Health Check
 
 The project includes a custom health monitoring script that validates database availability, backup status, and storage usage.
 
-![Health Check Status](screenshots/health_check.png)
+![Health Check Status](docs/screenshots/health_check.png)
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -72,14 +72,14 @@ Automated Backups
 
 Compressed PostgreSQL backups are automatically generated and stored using a retention policy.
 
-![Automated Backups Log](screenshots/backups.png)
+![Automated Backups Log](docs/screenshots/backups.png)
 -----------------------------------------------------------------------------------------------------------------------
 
 Cron Automation
 
 Database backups and health checks are scheduled using cron.
 
-![Automated Backups Log](screenshots/cron_jobs.png)
+![Automated Backups Log](docs/screenshots/cron_jobs.png)
 
 -----------------------------------------------------------------------------------------------------------------------
 
@@ -199,3 +199,4 @@ Author
 David
 
 Linux • PostgreSQL • Bash • SQL
+
