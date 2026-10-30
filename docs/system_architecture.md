@@ -112,7 +112,7 @@ Format:
 inventory_db_YYYYMMDD_HHMMSS.sql.gz
 
 ------------------------------------------------------------------------------------------------------------
-
+```text
 
 Monitoring Workflow
 
@@ -129,3 +129,5 @@ Backup Verification
           |
           v
 Health Status Report
+
+```
