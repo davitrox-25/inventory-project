@@ -1,5 +1,9 @@
 Automated Inventory Database Server
 
+Version: 1.0
+
+Status: Completed
+
 A hands-on Linux and PostgreSQL project focused on database administration, backup automation, disaster recovery, and system management.
 
 -----------------------------------------------------------------------------------------------------------------------
