@@ -130,14 +130,13 @@ crontab -e
 
 Example:
 
-0 2 * * * /home/davitrox/inventory-project/scripts/backup_db.sh >> /home/davitrox/inventory-project/backups/backup.log 2>&1
-
 
 Daily Database Backup
 
 0 2 * * *  /home/davitrox/inventory-project/scripts/backup_db.sh >> /home/davitrox/inventory-project/backups/backup.log 2>&1
 
 Hourly Health Check
+
 0 * * * *  /home/davitrox/inventory-project/scripts/check_db_health.sh >> /home/davitrox/inventory-project/logs/health.log 2>&1
 
 Verify:
