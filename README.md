@@ -21,6 +21,7 @@ The objective is to demonstrate:
 * Bash scripting
 * Cron job automation
 * Git & GitHub Workflow
+
 -----------------------------------------------------------------------------------------------------------------------
 
 
